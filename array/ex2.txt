@@ -1,0 +1,9 @@
+Note: Write a solution that only iterates over the string once and uses O(1) additional memory, since this is what you would be asked to do during a real interview.
+
+Given a string s, find and return the first instance of a non-repeating character in it. If there is no such character, return '_'.
+
+My solution for this task:
+
+[An array L of size 26 is still O(1) extra memory, since the size of the extra memory doesn't depend on the size of s.
+The array should store a least two pieces of information, L[i] = [the number of occurrences of the ith letter of the alphabet so far, value of the index that this letter first appeared]. Build the entries for L[i] as you iterate through the string.
+After building L, look for the index i where the number of occurrences is one and the first appearance of that letter is the smallest. The answer you are looking for is the ith letter of the alphabet.]
