@@ -1,0 +1,9 @@
+Note: Try to solve this task in-place (with O(1) additional memory), since this is what you'll be asked to do during an interview.
+You are given an n x n 2D matrix that represents an image. Rotate the image by 90 degrees (clockwise).
+
+My solution for this task :
+-Given the size of the matrix n, a row r, and a column c, write a function the determines where the element at a[r][c] should be placed after a clockwise rotation. To write this function, consider how far an element at location (r,c) is from each of the sides.
+After four 90 degree clockwise rotations, the matrix returns to its original position. Let's label the positions element a[r][c] would go through as (r,c) -> (r1,c1) -> (r2,c2), (r3,c3) -> (r,c) -> .... In other words, the position at row r and column c goes to row r1 and column c1 after one rotation.
+In a single rotation, we have a_new[r][c] = a_old[r3][c3], a_new[r1][c1] = a_old[r][c], a_new[r2][c2] = a_old[r1][c1], a_new[r3][c3] = a_old[r2][c2]. You can do these swaps with 4 variables (or even just 1, with some care!) In either case, the number of variables doesn't depend on n, the size of the matrix.
+If you use the previous hint to rotate the cycle of four elements, you should only iterate through 1/4 of the matrix as a starting point, so that every element is rotated once.
+
