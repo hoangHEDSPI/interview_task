@@ -1,4 +1,4 @@
-# Interview task solutions
+# Interview tasks solutions
 
-My solutions about famous companies's interview tasks</br>
+My solutions for famous companies's interview tasks</br>
 (Tested on codefights.com)</br>
