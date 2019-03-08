@@ -1,4 +1,3 @@
-# Interview tasks solutions
+# Interview tasks
 
-My solutions for codefights interview tasks</br>
-(Tested on codefights.com)</br>
+My solutions for some interview tasks that appeared on codesignal (codefights), hackerrank, leetcode,...
