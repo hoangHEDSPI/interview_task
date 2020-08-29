@@ -1,2 +1,3 @@
-# Interview questions
-My solutions for some interview questions that appeared on codesignal (codefights), hackerrank, leetcode,...
+# leetcode-and-more
+My solutions for problems on leetcode and some other online judge sites (hackerrank, codesignal,...)
+Solutions are written in random programming languges
