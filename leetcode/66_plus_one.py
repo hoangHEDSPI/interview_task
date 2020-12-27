@@ -8,10 +8,9 @@ class Solution:
                 digits[i] += 1
                 return digits
             digits[i] = 0
-        newDigits = [0 for _ in range(digitsLength+1)]
-        newDigits[0] = 1
+        newDigits = [0 if i != 0 else 1  for i in range(digitsLength+1)]
         return newDigits
-        
+
 if __name__=="__main__":
     digits = [9]
     solution = Solution()
