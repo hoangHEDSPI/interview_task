@@ -1,4 +1,5 @@
 import bisect
+from heapq import *
 
 class MedianFinder:
 
@@ -18,6 +19,9 @@ class MedianFinder:
         if n % 2 == 0:
             return (self.arr[n//2 - 1] + self.arr[n//2])/2
         return self.arr[n // 2]
+
+class MedianFilterHeap:
+    # Using heap for this problem
 
 
 # Your MedianFinder object will be instantiated and called as such:
