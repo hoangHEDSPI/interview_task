@@ -1,3 +1,4 @@
+from typing import List
 class Solution:
     def findDisappearedNumbers(self, nums: List[int]) -> List[int]:
         if len(nums) == 0:
@@ -6,4 +7,4 @@ class Solution:
         for i in range(len(nums)):
             if orderArr[nums[i]-1]:
                 orderArr[nums[i]-1] = 0
-        return [orderArr[i] for i in range(len(orderArr)) if orderArr[i]]
+        return [i for i in orderArr if i]
