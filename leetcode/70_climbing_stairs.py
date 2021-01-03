@@ -16,7 +16,7 @@ class Solution:
             dp[i] = dp[i-1] + dp[i-2]
         return dp[n]
 
-# Fibonacci solution
+# Fibonacci solution / faster than DP solution
 class FibonacciSolution:
     def climbStairs(self, n: int) -> int:
         if n <= 2:
