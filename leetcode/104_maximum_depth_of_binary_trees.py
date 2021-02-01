@@ -11,6 +11,8 @@ class Solution:
         level = [root] if root else []
         while level:
             depth += 1
+            # it isn't necessary to use a queue in here
+            # just keep a list to keep tracking of nodes at each level
             queue = []
             for el in level:
                 if el.left:
