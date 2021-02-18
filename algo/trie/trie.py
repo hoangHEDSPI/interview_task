@@ -60,7 +60,7 @@ class Trie(object):
             self.dfs(child, prefix + node.char)
         
     
-    def query(self, x):
+    def query(self, x) -> List[Tuple(str, int)]:
         """Given an input (a prefix), retrieve all words stored in the trie starting
         with this prefix, sorts the words by the number of times they have been inserted.
         Args:
