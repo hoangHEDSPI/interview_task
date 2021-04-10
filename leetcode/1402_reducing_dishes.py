@@ -29,14 +29,19 @@ class Solution:
                 max_res = first_sum
         return max_res
 
+def brilliantSolution( A):
+        res = total = 0
+        A.sort()
+        while A and A[-1] + total > 0:
+            total += A.pop()
+            res += total
+        return res
 
 if __name__ == '__main__':
     satisfaction = [-1,-8,0,5,-9]
     sol = Solution()
-    print(sol.maxSatisfaction(satisfaction))
+    assert sol.maxSatisfaction(satisfaction) == 14
     satisfaction = [4,3,2]
-    print(sol.maxSatisfaction(satisfaction))
+    assert sol.maxSatisfaction(satisfaction) == 20
     satisfaction = [-1,-4,-5]
-    print(sol.maxSatisfaction(satisfaction))
-
-            
+    assert sol.maxSatisfaction(satisfaction) == 0
