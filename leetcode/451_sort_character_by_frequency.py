@@ -13,4 +13,3 @@ class Solution:
             if i == k:
                 break
         return res
-            
