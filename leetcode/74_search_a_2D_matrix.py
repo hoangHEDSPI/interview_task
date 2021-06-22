@@ -5,17 +5,17 @@ class Solution:
         mid = 0
         while low <= high:
             mid = (high + low) // 2
-            # If x is greater, ignore left half
+            # If x is greater, ignore the left half
             if arr[mid] < target:
                 low = mid + 1
 
-            # If x is smaller, ignore right half
+            # If x is smaller, ignore the right half
             elif arr[mid] > target:
                 high = mid - 1
-            # means x is present at mid
+            # Means x is presented at mid
             else:
                 return mid
-        # If we reach here, then the element was not present
+        # If we reach here, then the element was not presented
         return -1
         
     def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
