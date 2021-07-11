@@ -1,6 +1,6 @@
 class Solution:
     def calculate(self, s: str) -> int:
-        # default sign value is +1 (sign can get the value of -1/+1)
+        # default sign value is +1 (sign can either be +1 or -1)
         # num will store the current considering number
         # res will store the result
         
