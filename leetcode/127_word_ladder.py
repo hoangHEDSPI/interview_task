@@ -19,7 +19,7 @@ class Solution:
         while queue:
             currentWord, level = queue.popleft()
             for i in range(commonLen):
-                intermediateWord = currentWord[:i] + '*' + currentWord[i+1:]
+                intermediateWord = currentWord[:i] + "*" + currentWord[i+1:]
                 for word in allCombinationDict[intermediateWord]:
                     if word == endWord:
                         return level + 1
