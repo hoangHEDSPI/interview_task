@@ -23,3 +23,4 @@ class Solution:
             return self.lowestCommonAncestor(root.left, p, q)
         elif root.right and p.val > root.val and q.val > root.val:
             return self.lowestCommonAncestor(root.right, p, q)
+        
